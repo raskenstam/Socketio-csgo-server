@@ -20,8 +20,8 @@ public OnClientPostAdminCheck(client)
 {	
 	
 	char auth[32];
-	GetClientAuthId(client, AuthId_Steam2, auth, sizeof(auth));
-    PrintToServer("Hello world");
+	GetClientAuthId(client, AuthId_SteamID64, auth, sizeof(auth));
+    PrintToServer("Hello world1");
 	PrintToServer(auth);
 	
 }
