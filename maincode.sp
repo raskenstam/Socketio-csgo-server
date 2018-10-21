@@ -23,6 +23,6 @@ public OnClientPostAdminCheck(client)
 	GetClientAuthId(client, AuthId_SteamID64, auth, sizeof(auth));
     PrintToServer("Hello world1");
 	PrintToServer(auth);
-	CS_SwitchTeam(client, 1)
+	CS_SwitchTeam(client, 2)
 	
 }
