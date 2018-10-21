@@ -1,20 +1,16 @@
-#pragma semicolon 1
-
 #include <sourcemod>
-#include <sdktools>
-#include <sdkhooks>
 
 
 
 
-public Plugin:myinfo =
+public Plugin myinfo =
 {
-	name = "mysqlteammanager",
-	author = "raskenstam",
-	description = "move the players to the right team",
-	version = PLUGIN_VERSION,
-	url = ""
-}
+	name = "My First Plugin",
+	author = "Me",
+	description = "My first plugin ever",
+	version = "1.0",
+	url = "http://www.sourcemod.net/"
+};
 public void OnPluginStart()
 {
 	PrintToServer("Hello worldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworldworld!");
