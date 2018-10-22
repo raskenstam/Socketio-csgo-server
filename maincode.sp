@@ -17,14 +17,14 @@ public OnClientPostAdminCheck(client)
 {	
 	
 	char auth[32];
-	
+	char auth2[32];
 	GetClientAuthId(client, AuthId_SteamID64, auth, sizeof(auth));
     PrintToServer("Hello world1");
-	
+	PrintToServer(auth2);
 	CS_SwitchTeam(client, 2);
 	ChangeClientTeam(client, 2);
-	IntToString(client,auth,32)
-	PrintToServer(auth);
+	IntToString(client,auth2,32)
+	PrintToServer(auth2);
 
 	
 	
