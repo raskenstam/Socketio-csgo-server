@@ -106,10 +106,10 @@ public Action Command_JoinTeam(int client, const char[] command, int argc) {
 						if(old_team != CS_TEAM_SPECTATOR) {
 							if(IsPlayerAlive(client) != CS_TEAM_SPECTATOR && old_team != CS_TEAM_SPECTATOR) {
 								ForcePlayerSuicide(client);
-								CS_SwitchTeam(client, CS_TEAM_CT);
+								CS_SwitchTeam(client, CS_TEAM_T);
 							} 
 							else {
-								ChangeClientTeam(client, CS_TEAM_CT);
+								ChangeClientTeam(client, CS_TEAM_T);
 							}
 					return Plugin_Handled;
 			} else {
@@ -120,10 +120,10 @@ public Action Command_JoinTeam(int client, const char[] command, int argc) {
 						if(old_team != CS_TEAM_SPECTATOR) {
 							if(IsPlayerAlive(client) != CS_TEAM_SPECTATOR && old_team != CS_TEAM_SPECTATOR) {
 								ForcePlayerSuicide(client);
-								CS_SwitchTeam(client, CS_TEAM_T);
+								CS_SwitchTeam(client, CS_TEAM_CT);
 							} 
 							else {
-								ChangeClientTeam(client, CS_TEAM_T);
+								ChangeClientTeam(client, CS_TEAM_CT);
 							}
 					return Plugin_Handled;
 			} else {
